@@ -66,29 +66,30 @@ Les numéros correspondent aux commentaires `TODO` dans les fichiers.
    - le lien « ← Retour à l'accueil » ne fonctionne pas. Cliquez dessus, observez l'adresse dans la barre du navigateur, trouvez l'erreur et corrigez-la ;
    - ajoutez en bas de la page un lien vers la page « Nos cultures ».
 5. Dans `index.html`, transformez « le site de la FAO » en lien vers `https://www.fao.org/home/fr`. Ce lien doit s'ouvrir dans un **nouvel onglet** : ajoutez `target="_blank"` et `rel="noopener"`.
-6. Dans `pages/contact.html`, transformez l'adresse `contact@example.com` en lien e-mail : `href="mailto:contact@example.com"`. Cliquez dessus : que se passe-t-il ?
+3
+6. Dans `pages/contact.html`, transformez l'adresse `contact@example.com` en lien e-mail : `href="mailto:contact@example.com"`. Cliquez dessus : que se passe-t-il ? : contact@example.com devient un lien mais quand on clic dessus, ça ne passe pas pas
 7. Dans `cultures.html`, le lien « cliquez ici » n'est pas clair (imaginez une personne aveugle qui écoute la liste des liens de la page : elle entendrait seulement « cliquez ici »). Réécrivez la phrase pour que le texte du lien décrive sa destination, par exemple : « Lire [l'article de Wikipédia sur l'agriculture] ».
 8. **Testez tous vos liens** en remplissant ce tableau (recopiez-le sur papier ou dans un fichier) :
 
 | Page de départ | Lien | Destination attendue | Fonctionne ? |
 |---|---|---|---|
-| `index.html` | Nos cultures | `cultures.html` | |
-| `index.html` | Nous contacter | `pages/contact.html` | |
-| `index.html` | Site de la FAO | fao.org (nouvel onglet) | |
-| `cultures.html` | Retour à l'accueil | `index.html` | |
-| `cultures.html` | Article Wikipédia | wikipedia.org | |
-| `pages/contact.html` | Retour à l'accueil | `index.html` | |
-| `pages/contact.html` | Nos cultures | `cultures.html` | |
-| `pages/contact.html` | Adresse e-mail | logiciel de messagerie | |
+| `index.html` | Nos cultures | `cultures.html` |oui |
+| `index.html` | Nous contacter | `pages/contact.html` | oui|
+| `index.html` | Site de la FAO | fao.org (nouvel onglet) | oui|
+| `cultures.html` | Retour à l'accueil | `index.html` | oui|
+| `cultures.html` | Article Wikipédia | wikipedia.org | oui|
+| `pages/contact.html` | Retour à l'accueil | `index.html` | oui|
+| `pages/contact.html` | Nos cultures | `cultures.html` | oui|
+| `pages/contact.html` | Adresse e-mail | logiciel de messagerie | non|
 
 ## Critères de réussite
 
-- [ ] Les 8 liens du tableau fonctionnent.
-- [ ] Tous les liens internes utilisent des chemins **relatifs** (aucun `C:\…` ni `file:///…`).
-- [ ] Le lien de retour de `pages/contact.html` utilise `../`.
-- [ ] Le lien vers la FAO s'ouvre dans un nouvel onglet et contient `rel="noopener"`.
-- [ ] Le lien e-mail commence par `mailto:`.
-- [ ] Plus aucun lien « cliquez ici » : chaque texte de lien a du sens tout seul.
+- [x] Les 8 liens du tableau fonctionnent.
+- [x] Tous les liens internes utilisent des chemins **relatifs** (aucun `C:\…` ni `file:///…`).
+- [x] Le lien de retour de `pages/contact.html` utilise `../`.
+- [x] Le lien vers la FAO s'ouvre dans un nouvel onglet et contient `rel="noopener"`.
+- [x] Le lien e-mail commence par `mailto:`.
+- [x] Plus aucun lien « cliquez ici » : chaque texte de lien a du sens tout seul.
 
 ## Indices
 
@@ -123,10 +124,10 @@ C'est normal si aucun logiciel de messagerie n'est configuré sur votre ordinate
 
 ## Questions de compréhension
 
-1. Quelle est la différence entre un chemin relatif et une URL absolue ? Quand utilise-t-on l'un ou l'autre ?
-2. Que signifie `../` dans un chemin ?
-3. Pourquoi faut-il éviter les espaces et les majuscules dans les noms de fichiers ?
-4. Pourquoi « cliquez ici » est-il un mauvais texte de lien ?
+1. Quelle est la différence entre un chemin relatif et une URL absolue ? Quand utilise-t-on l'un ou l'autre ? un chemin relatif indique l'emplacement d'un fichier par rapport au fichier actuel et une URL absolue indique l'adresse complète d'une ressource sur Internet.
+2. Que signifie `../` dans un chemin ? permet de remonter d'un dossier au dossier.
+3. Pourquoi faut-il éviter les espaces et les majuscules dans les noms de fichiers ? ils peuvent provoquer des erreurs de chemin.
+4. Pourquoi « cliquez ici » est-il un mauvais texte de lien ? il n'est pas assez explicite pour la comprehension d'ou le lien nous mène.
 
 ## Lien avec le brief PlantEvo
 

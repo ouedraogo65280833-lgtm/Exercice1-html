@@ -55,19 +55,19 @@ Les numéros correspondent aux commentaires `TODO` dans `index.html`.
    - Remplacez le `alt=""` par un vrai texte alternatif : cette image apporte une information, elle n'est pas décorative.
 5. **Image cliquable** : faites de l'image de la mangue un lien vers `https://fr.wikipedia.org/wiki/Mangue`. Pour cela, placez la balise `<img>` **à l'intérieur** d'une balise `<a>`. Adaptez le `alt` : il doit maintenant décrire la destination du lien (relisez le tableau ci-dessus).
 6. **Expériences** :
-   - Supprimez `width` et `height` sur une image : que se passe-t-il ? Remettez-les.
-   - Mettez `width="300"` et `height="100"` : l'image est-elle déformée ? Remettez les bonnes valeurs.
-   - Renommez temporairement `tomate.svg` en `tomate2.svg` (dans l'explorateur de fichiers) et rechargez la page : qu'affiche le navigateur à la place de l'image ? Remettez le bon nom.
+   - Supprimez `width` et `height` sur une image : que se passe-t-il ? l'image devient grande. Remettez-les.
+   - Mettez `width="300"` et `height="100"` : l'image est-elle déformée ? oui, elle devient plus pétite. Remettez les bonnes valeurs.
+   - Renommez temporairement `tomate.svg` en `tomate2.svg` (dans l'explorateur de fichiers) et rechargez la page : qu'affiche le navigateur à la place de l'image ? la description laissée dans alt. Remettez le bon nom.
 
 ## Critères de réussite
 
-- [ ] Les 4 images s'affichent.
-- [ ] Chaque `<img>` a un attribut `alt` utile (pas de « image de… », pas de nom de fichier).
-- [ ] Chaque `<img>` a un `width` et un `height` qui respectent les proportions (4 / 3).
-- [ ] Le chemin du maïs passe par le sous-dossier `cereales`.
-- [ ] La tomate est dans une `<figure>` avec une `<figcaption>`.
-- [ ] Un clic sur la mangue ouvre l'article Wikipédia.
-- [ ] Tous les chemins sont relatifs.
+- [x] Les 4 images s'affichent.
+- [x] Chaque `<img>` a un attribut `alt` utile (pas de « image de… », pas de nom de fichier).
+- [x] Chaque `<img>` a un `width` et un `height` qui respectent les proportions (4 / 3).
+- [x] Le chemin du maïs passe par le sous-dossier `cereales`.
+- [x] La tomate est dans une `<figure>` avec une `<figcaption>`.
+- [x] Un clic sur la mangue ouvre l'article Wikipédia.
+- [x] Tous les chemins sont relatifs.
 
 ## Indices
 
@@ -110,10 +110,10 @@ Comparez lettre par lettre :
 
 ## Questions de compréhension
 
-1. À quoi sert l'attribut `alt` ? Citez deux situations où il est utilisé.
-2. Pourquoi indiquer `width` et `height` alors que l'image s'affiche très bien sans ?
-3. Quand doit-on écrire `alt=""` (vide) ?
-4. Quelle est la différence entre `<figcaption>` et `alt` ?
+1. À quoi sert l'attribut `alt` ? Il décrit l'image et s'affiche si l'image ne se charge pas. Citez deux situations où il est utilisé: pour personnes malvoyantes, en cas de problème de connexion 
+2. Pourquoi indiquer `width` et `height` alors que l'image s'affiche très bien sans ? Ils définissent les dimensions de l'image.
+3. Quand doit-on écrire `alt=""` (vide) ? pour une image sans information utile.
+4. Quelle est la différence entre `<figcaption>` et `alt` ? alt : décrit l'image pour l'accessibilité. 'figcaption' : affiche une légende visible sous l'image.
 
 ## Lien avec le brief PlantEvo
 
