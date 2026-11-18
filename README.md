@@ -42,14 +42,14 @@ Aucun ! Ce dossier ne contient que cette consigne. C'est vous qui créez le fich
 
 ## Critères de réussite
 
-- [ ] Le fichier s'appelle `index.html` et se trouve dans le dossier `01-premiere-page`.
-- [ ] La première ligne est `<!DOCTYPE html>`.
-- [ ] La balise `<html>` a l'attribut `lang="fr"`.
-- [ ] Le `<head>` contient `meta charset`, `meta viewport` et un `<title>` personnalisé.
-- [ ] Le `<body>` contient exactement un `<h1>` et au moins un `<p>`.
-- [ ] Chaque balise ouverte est fermée (sauf `<meta>`, qui n'a pas de balise fermante).
-- [ ] Le code est indenté : chaque balise « enfant » est décalée de 2 espaces par rapport à son « parent ».
-- [ ] Les accents s'affichent correctement dans le navigateur.
+- [x] Le fichier s'appelle `index.html` et se trouve dans le dossier `01-premiere-page`.
+- [x] La première ligne est `<!DOCTYPE html>`.
+- [x] La balise `<html>` a l'attribut `lang="fr"`.
+- [x] Le `<head>` contient `meta charset`, `meta viewport` et un `<title>` personnalisé.
+- [x] Le `<body>` contient exactement un `<h1>` et au moins un `<p>`.
+- [x] Chaque balise ouverte est fermée (sauf `<meta>`, qui n'a pas de balise fermante).
+- [x] Le code est indenté : chaque balise « enfant » est décalée de 2 espaces par rapport à son « parent ».
+- [x] Les accents s'affichent correctement dans le navigateur.
 
 ## Indices
 
@@ -83,10 +83,11 @@ Une fois que vous savez écrire la structure de mémoire, VS Code peut la géné
 
 ## Questions de compréhension
 
-1. Quelle est la différence entre le `<head>` et le `<body>` ?
-2. À quoi sert l'attribut `lang="fr"` ? (Pensez aux lecteurs d'écran et aux moteurs de recherche.)
-3. À quoi sert la ligne `<!DOCTYPE html>` ?
-4. Pourquoi est-il utile d'écrire des commentaires dans son code, alors qu'ils ne s'affichent pas ?
+1. Quelle est la différence entre le `<head>` et le `<body>` ? <head>: contient les informations sur la page.
+<body> : contient le contenu visible de la page.
+2. À quoi sert l'attribut `lang="fr"` ? indique que la page est en français. (Pensez aux lecteurs d'écran et aux moteurs de recherche.)
+3. À quoi sert la ligne `<!DOCTYPE html>` ? indique au navigateur que nous écrivont en html.
+4. Pourquoi est-il utile d'écrire des commentaires dans son code, alors qu'ils ne s'affichent pas ? permettent d'expliquer le code
 
 ## Lien avec le brief PlantEvo
 
